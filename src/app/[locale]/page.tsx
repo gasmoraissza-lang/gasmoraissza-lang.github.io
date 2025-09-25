@@ -1,6 +1,13 @@
 import { Header, AreasSection, AboutSection, ArticlesSection, NewsletterSection, FAQSection, ContactSection, Footer } from '@/components/sections';
 import HomeClient from './HomeClient';
 
+export async function generateStaticParams() {
+  return [
+    { locale: 'pt' },
+    { locale: 'en' }
+  ];
+}
+
 interface PageProps {
   params: Promise<{
     locale: string;

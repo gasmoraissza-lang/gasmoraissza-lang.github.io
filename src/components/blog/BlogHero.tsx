@@ -1,8 +1,8 @@
-import { BlogPost } from '@/data/blog';
+import { Post } from '@/lib/mdx';
 import { Heading, Text, Badge, Button } from '@/components/ui';
 
 interface BlogHeroProps {
-  post: BlogPost;
+  post: Post;
   locale: string;
 }
 
@@ -22,28 +22,28 @@ export default function BlogHero({ post, locale }: BlogHeroProps) {
         <div className="text-center">
           <div className="flex justify-center gap-2 mb-6">
             <Badge variant="primary" size="lg">
-              {post.category}
+              {post.matter.category}
             </Badge>
             <Badge variant="outline" size="lg">
-              {post.readTime} min de leitura
+              {post.matter.readTime} min de leitura
             </Badge>
           </div>
 
           <Heading level={1} size="4xl" className="mb-6" color="primary">
-            {post.title}
+            {post.matter.title}
           </Heading>
 
           <Text size="xl" color="secondary" className="mb-8 max-w-3xl mx-auto">
-            {post.excerpt}
+            {post.matter.excerpt}
           </Text>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 dark:text-gray-300">
-            <span>Por {post.author}</span>
+            <span>Por {post.matter.author}</span>
             <span>•</span>
-            <span>{formatDate(post.publishedAt)}</span>
+            <span>{formatDate(post.matter.publishedAt)}</span>
             <span>•</span>
             <div className="flex gap-1">
-              {post.tags.map((tag, index) => (
+              {post.matter.tags.map((tag, index) => (
                 <Badge key={index} variant="ghost" size="xs">
                   {tag}
                 </Badge>

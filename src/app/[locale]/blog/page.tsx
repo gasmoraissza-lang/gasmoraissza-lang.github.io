@@ -3,6 +3,13 @@ import { Header, Footer } from '@/components/sections';
 import { Container, Grid, Heading, Text, Badge, Button } from '@/components/ui';
 import BlogCard from '@/components/blog/BlogCard';
 
+export async function generateStaticParams() {
+  return [
+    { locale: 'pt' },
+    { locale: 'en' }
+  ];
+}
+
 interface BlogPageProps {
   params: Promise<{
     locale: string;

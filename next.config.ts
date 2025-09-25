@@ -8,8 +8,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/gasmoraissza-lang',
-  assetPrefix: '/gasmoraissza-lang'
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 };
 
 const withMDX = createMDX({

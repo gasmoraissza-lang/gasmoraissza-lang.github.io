@@ -14,9 +14,16 @@ interface BlogPostPageProps {
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  const params = [];
+  
+  for (const post of posts) {
+    params.push({
+      locale: post.matter.locale,
+      slug: post.slug,
+    });
+  }
+  
+  return params;
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
