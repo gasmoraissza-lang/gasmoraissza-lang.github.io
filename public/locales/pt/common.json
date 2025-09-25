@@ -1,0 +1,60 @@
+{
+  "header": {
+    "title": "Marina Cabo Advogados",
+    "subtitle": "Conhecimento & Estratégia",
+    "nav": {
+      "services": "Serviços",
+      "about": "Sobre",
+      "contact": "Contato"
+    }
+  },
+  "hero": {
+    "title": "Defendendo seus direitos com",
+    "titleHighlight": "excelência",
+    "description": "Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Oferecemos soluções jurídicas personalizadas para proteger seus interesses.",
+    "cta": {
+      "consultation": "Agende uma Consulta",
+      "services": "Nossos Serviços"
+    }
+  },
+  "services": {
+    "title": "Nossas Áreas de Atuação",
+    "subtitle": "Especialidades jurídicas para atender suas necessidades",
+    "civil": {
+      "title": "Direito Civil",
+      "description": "Contratos, responsabilidade civil, direito de família e sucessões."
+    },
+    "labor": {
+      "title": "Direito Trabalhista",
+      "description": "Defesa dos direitos trabalhistas, rescisões e acordos coletivos."
+    },
+    "corporate": {
+      "title": "Direito Empresarial",
+      "description": "Constituição de empresas, contratos comerciais e consultoria jurídica."
+    }
+  },
+  "about": {
+    "title": "Sobre Marina Cabo",
+    "description1": "Advogada com mais de 10 anos de experiência, especializada em direito civil, trabalhista e empresarial. Formada pela Universidade Federal, com pós-graduação em Direito Empresarial.",
+    "description2": "Comprometida em oferecer soluções jurídicas eficazes e personalizadas, sempre priorizando os interesses e necessidades de nossos clientes."
+  },
+  "contact": {
+    "title": "Contato",
+    "info": {
+      "title": "Informações de Contato",
+      "email": "marina@marinacabo.adv.br",
+      "phone": "(11) 9999-9999",
+      "location": "São Paulo - SP"
+    },
+    "hours": {
+      "title": "Horário de Atendimento",
+      "weekdays": "Segunda a Sexta: 8h às 18h",
+      "saturday": "Sábado: 8h às 12h",
+      "sunday": "Domingo: Fechado"
+    }
+  },
+  "footer": {
+    "copyright": "Marina Cabo - Advocacia Especializada. Todos os direitos reservados.",
+    "oab": "OAB/SP 123.456"
+  }
+}
